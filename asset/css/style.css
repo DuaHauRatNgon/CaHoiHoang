@@ -1,0 +1,320 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    height: 46px;
+    background-color: black;
+}
+
+#header .nav{
+    display: inline-block;
+}
+
+#header .nav li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0px 10px;
+}
+
+#header .nav li a{
+    text-decoration: none;
+    color: white;
+    line-height: 46px;
+}
+
+#header .nav li:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+#header .nav li:hover a{
+    color: black;
+}
+
+#header .nav .li-subnav{
+    position: relative;
+}
+
+#header .nav .li-subnav .subnav{
+    position: absolute;
+    left: 0;
+    display: none;
+    background-color: white;
+}
+
+#header .nav .li-subnav:hover .subnav{
+    display: block;
+}
+
+#header .nav .li-subnav .subnav li:hover{
+    display: block;
+    background-color: #ccc;
+}
+
+#header .search{
+    float: right;
+    padding: 13px;
+    color: white;
+}
+
+#header .search:hover{
+    background-color: firebrick;
+    cursor: pointer;
+}
+
+#slider{
+    position: relative;
+    height: 900px;
+    background: url('/asset/img/05.png') center top / cover no-repeat;
+}
+
+#slider .text{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 10px;
+}
+
+#content .band{
+    width: 800px;
+    margin: 0px auto;
+}
+
+.head-text{
+    text-align: center;
+    margin-top: 64px;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+ .sub-text{
+    margin-top: 20px;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+
+}
+
+#content .main-text{
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+#content .band .mem-list{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+/* #content .band .mem-list .mem-item{} */
+    /* float: left; */
+    /* width: 30%; */
+
+
+#content .band .mem-list .mem-item img{
+    width: 90%;
+}
+
+#content .tour{
+    height: 800px;
+    background-color: black;
+}
+
+/* #content .tour .tour-container{
+} */
+
+#content .tour .head-text{
+    color: white;
+}
+
+#content .tour .sub-text{
+    color: white;
+    
+}
+
+#content .tour-container .head-text{
+    padding-top: 46px;
+}
+
+#content .tour-ticket{
+    width: 800px;
+    margin: 40px auto;
+    background-color: white;
+}
+
+#content .tour-ticket li{
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    opacity: 0.7;
+}
+
+#content .tour-ticket span{
+    padding: 5px;
+    background-color: red;
+    color: white;
+    border-radius: 10%;
+    margin-left: 600px;
+}
+
+#content .tour-place{
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    width: 800px;
+    margin: 40px auto;
+    /* background-color: white; */
+}
+
+#content .tour-place .tour-place-item img{
+    width: 250px;
+    height: 200px;
+}
+
+#content .tour-place .tour-place-item img:hover{
+    opacity: 0.5;
+}
+
+#content .tour-place .tour-place-text{
+    position: relative;
+    width: 250px;
+    height: 240px;
+    background-color: white;
+}
+
+#content .tour-place h3{
+    padding: 20px;
+    text-decoration:underline;
+}
+
+#content .tour-place .tour-date{
+    padding: 0px 20px;
+    opacity: 0.8;
+}
+
+#content .tour-place .tour-decrip{
+    padding: 10px 20px;
+}
+
+#content .tour-place a{
+    color: #000;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 9px 27px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+#content .tour-place a:hover{
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+
+#content .tour-place button{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    border: none;
+}
+
+#content .tour-place button:hover{
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+
+#content .contact{
+    height: 400px;
+}
+
+#content .contact .contact-container{
+    /* height: 200px; */
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin: 60px auto;
+    line-height: 1.8;
+}
+
+#content  .contact-container input{
+    padding: 10px;
+}
+
+#content  .contact-container .one-input input{
+    width: 100%;
+    margin-top: 5px;
+}
+
+#content  .contact-container button{
+    float: right;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+#content  .contact-container button:hover{
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+
+#content .map{
+    background: url('/asset/img/01.png') center top/ cover no-repeat;
+    height: 800px;
+}
+
+#footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+
+#footer .social-list{
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+#footer .social-list a{
+    margin: 0px 10px;
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+}
+
+#footer .social-list a:hover{
+    opacity: 0.5;
+}
+
+#footer .social-power{
+    position: absolute;
+    margin: auto;
+    bottom: 50px;
+    font-size: 20px;
+}
